@@ -78,17 +78,90 @@ h1
 
 /* 4 Boxen ineinander Content, Padding, Border und Margin */
 
-/* Content ist width (Breite) und height (höhe) am besten setzt man das in % */
-/* mit text-aligne: "Position" kann man den Text bewegen
-
 .hero
 {
     background-color: cornflowerblue;
-    
+
     width: 100px;
     height: 20px;
     padding: 10px;
     border: 1px solid black;
     margin: 10px;
     text-align: center;
+}
+
+/* Content ist width (Breite) und height (höhe) am besten setzt man das in % */
+/* mit*/ text-aligne: "Position" /*kann man den Text bewegen*/
+
+/*Padding gibt es 4 Varianten:*/
+  .Katze 
+  {
+      /*1.*/    padding: 10px;                  /*Das gilt für alle Seiten*/
+      /*2.*/    padding: 10px 20px;             /*Dort ist die erste Zahl oben/unten und die zweite Links/Rechts*/
+      /*3.*/    padding: 5px 10px 15px 20px;    /*Dort ist jede seite einzelt beschrieben im Urzeigersinn von Oben (oben rechts unten links)*/
+      /*4.*/    padding-left: 7rem;             /*Man kann es auch Anhand der Richtung angeben*/
+         }                                      /*Man kann auch "Rem" benutzen das ist keine Feste größe sondern ein verhältnis zur font größe*/
+
+  .katze
+{
+      /*  größe  typ   Farbe*/
+    border: 1px solid black;
+}
+ 
+  .katze
+  {
+      margin: 10px;
+      margin: 10px 20px;
+      margin: 5px 10px 15px 20px;
+      margin-top: 5rem;
+  }
+
+.first, .second
+{
+    display: inline-block;      /*inline-block setzt es eine Zeile tiefer*/
+    display: block;             /*block trennt sie von einander und setzt es eine Zeile tiefer*/
+    display: inline;            /*inline lässt es weiter in der Linie laufen*/
+}
+
+
+/*Pseudo-classes*/
+button:hover
+{
+    background-color: orange;       /*Verändert die Farbe von dem Element wenn die Mau drüber ist*/
+    transition: 3s ease all;        /*Für einen schöneren Übergang*/
+    transform: translateY(-5px);    /*lässt die Button sich bewegen wenn man drauf ist*/
+}
+
+div p:first-child
+{
+    color: green;       /*Der erste Text mit P wird grün*/
+}
+
+html
+{
+    font-family: Verdana;   /*Schriftart*/
+    font-size: 9px;         /*Schriftgröße*/
+}
+
+
+
+body
+{
+    background-color: tan;
+}
+
+@media screen and (max-width: 992px)
+{
+    body 
+    {
+        background-color: blue;
+    }   
+}
+
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        background-color: olive;
+    }
 }
