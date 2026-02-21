@@ -1,0 +1,94 @@
+/* Auswählen von einem element */
+h1
+{
+    
+}
+
+/* Alle die mit "." anfangen sind Klassen */
+.secondary
+{
+    
+}
+
+/* Auswählen einer ID */
+#main-text
+{
+    
+}
+
+/* Heißt h1 und h2 */
+h1, h2
+{
+    
+}
+
+/* Leertaste heißt h2 in h1 */
+h1 h2
+{
+    
+}
+
+/* all h2 1 level deep in .hero */
+.hero > h2
+{
+    
+}
+
+/* Attribute */
+
+h1
+{
+    color: black;
+}
+
+h2
+{
+    color: blue;
+}
+
+h3
+{
+    color: red;
+}
+
+/* Proritäten */
+
+/* Die Klasse ist spezifischer hals h1 daher wird h1 überschrieben ID > Class > Element */
+h1
+{
+    color: orange;
+}
+
+.main-header
+{
+    color: purple;
+}
+
+/*Farben*/
+
+/* background-color ist der Attributkey und skyblue der Attribut Wert */
+/* Oft benutzt Hex-code statt Farbe */
+.hero
+{
+    color: white;
+    background-color: skyblue;
+}
+
+/* Layout */
+
+/* 4 Boxen ineinander Content, Padding, Border und Margin */
+
+/* Content ist width (Breite) und height (höhe) am besten setzt man das in % */
+/* mit text-aligne: "Position" kann man den Text bewegen
+
+.hero
+{
+    background-color: cornflowerblue;
+    
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
